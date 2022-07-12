@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 5</title>
+    <style>
+        .redText {color:red;}
+        .greenText {color: green;}
+        .blueText {color: blue;}
+    </style>
+    <script type="text/javascript">
+        window.onload = function(){
+            // 버튼 가져오기
+            // var rBtn = document.getElementById("rBtn"); // 아이디가 rBtn인 button 태그 
+            // var gBtn = document.getElementById("gBtn"); // 아이디가 gBtn인 button 태그 
+            // var bBtn = document.getElementById("bBtn"); // 아이디가 bBtn인 button 태그 
+
+            rBtn.onclick = function(){
+                document.getElementById("changeText").className = "redText";
+            };
+            gBtn.onclick = function(){
+                document.getElementById("changeText").className = "greenText";
+            };
+            bBtn.onclick = function(){
+                document.getElementById("changeText").className = "blueText";
+            };
+        }
+
+    </script>
+</head>
+<body>
+    <p id="changeText">클릭한 버튼에 따라 다른 스타일 적용</p>
+    <button type="button" id="rBtn">빨강</button>
+    <button type="button" id="gBtn">초록</button>
+    <button type="button" id="bBtn">파랑</button>
+
+
+</body>
+</html>
