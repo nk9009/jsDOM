@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3 - 문제 해결 방식 2번</title>
+    <style></style>
+    <script type="text/javascript">
+        function redColor(g_color){
+            document.getElementById("changeText").style.color = g_color;
+        }
+    </script>
+</head>
+<body>
+    <p id="changeText">클릭한 버튼에 따라 다른 스타일 적용</p>
+    <button type="button" onclick="redColor('red')">빨강</button>
+    <button type="button" onclick="redColor('green')">초록</button>
+    <button type="button" onclick="redColor('blue')">파랑</button>
+</body>
+</html>

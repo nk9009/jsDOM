@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 예시 1</title>
+    <style></style>
+    <script type="text/javascript">
+        function testFunc(){
+            // 기존 폼 요소 선택: name 속성값 또는 배열. 실무에서는 name을 주로 사용.
+            // document.form1.txt.value = "글자 출력하기";
+            // DOM 방식
+            // getElemenetById("선택할 요소의 id 속성값")
+                document.getElementById("uid").value = "글자 출력";
+            };
+    </script>
+</head>
+<body>
+    <form name="form1" action="" method="">
+        <p>* 버튼을 클릭하면 필드에 글자가 나타납니다.</p>
+        <p>
+            <input type="text" name="txt" id="uid">
+            <button type="button" onclick="testFunc()">글자 출력</button>
+        </p>
+    </form>
+</body>
+</html>
